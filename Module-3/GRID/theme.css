@@ -1,0 +1,45 @@
+nav {
+  background-color: yellow;
+  grid-area: nav;
+}
+
+nav p {
+  color: red;
+  border: 1px solid red;
+  padding: 1em;
+}
+
+aside {
+  display: flex;
+  font-size: 1em;
+  grid-area: aside;
+}
+
+aside i {
+  color: blueviolet;
+}
+
+footer {
+  background-color: lightgrey;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: underline;
+  color: salmon;
+  grid-area: footer;
+}
+
+footer h2 {
+  color: coral;
+}
+
+.grid {
+    
+  display: grid;
+  /* grid-template-columns:repeat(4,1fr) ; */
+  grid-row: auto;
+  grid-template-areas:
+    "nav main main aside"
+    "nav main main aside"
+    "footer footer footer footer";
+}

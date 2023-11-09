@@ -1,0 +1,40 @@
+.largeur {
+  width: 60%;
+  height: 80vh;
+  background-image: url(instructions/ressources/lentilles.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scroll{
+    overflow-y: scroll;
+    height: 27%;
+    
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+menu {
+  position: sticky;
+  background-color: red;
+  color: white;
+  margin: 0%;
+  padding: 0;
+  top: 0;
+  width: 25%;
+  margin-top: 33%;
+}
+
+menu p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+menu p:last-child,
+p:nth-child(2) {
+  font-weight: bold;
+}

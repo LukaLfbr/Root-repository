@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="../common-v3.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Intégrer des médias en HTML</h1>
+      <p>
+        Utilisation des services tiers et des éléments AUDIO, VIDEO pour
+        intégrer des sons et des vidéos
+      </p>
+    </header>
+    <main class="container">
+      <h2>La dernière conférence de Lea Verou (sur Vimeo)</h2>
+      <iframe
+        src="https://player.vimeo.com/video/364399309?h=c31c26d632"
+        width="640"
+        height="360"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <p>
+        <a href="https://vimeo.com/364399309"
+          >Lea Verou - The Web Design Cheat Code: Using SVG to Bridge CSS&rsquo;
+          Gaps</a
+        >
+        from <a href="https://vimeo.com/fronteers">Fronteers</a> on
+        <a href="https://vimeo.com">Vimeo</a>.
+      </p>
+      <h2>La balise video</h2>
+      <video
+        src="instructions/ressources/bunny.mp4"
+        type="video/mp4"
+        controls
+        poster="instructions/ressources/bunny.jpg"
+      >
+        <source src="instructions/ressources/bunny.ogv" type="video/ogv" />
+      </video>
+
+      <h2>La balise audio</h2>
+      <audio src="instructions/ressources/space.mp3" controls>
+        <source src="instructions/ressources/space.ogg" type="audio/ogg" />
+        <source src="instructions/ressources/space.wav" type="audio/wav" />
+      </audio>
+    </main>
+    <footer class="footer">
+      <p>
+        3WA Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        iste minus mollitia!
+      </p>
+    </footer>
+  </body>
+</html>

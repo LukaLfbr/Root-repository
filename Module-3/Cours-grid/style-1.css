@@ -1,0 +1,46 @@
+h2 {
+  background-color: lightgrey;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: 
+            "nav main aside"
+             ; /*Si le footer est dehors ça fonctionne */
+  grid-template-columns: 20% auto 20%;
+}
+
+nav {
+  background-color: #fc3;
+  
+  gap: 0.5em;
+  grid-area: nav;
+  
+}
+nav p {
+  color: red;
+  border: 1px solid red;
+  
+}
+
+main {
+  grid-area: main;
+}
+aside {
+  grid-area: aside;
+  background-color: #fa3;
+  font-size: 2em;
+  gap: 0.5em;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.sClass {
+  background-color: lightgray;
+}
+
+i {
+  color: #f83;
+}

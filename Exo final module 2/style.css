@@ -1,0 +1,262 @@
+/* Général */
+
+body {
+  color: #333;
+  line-height: 1.5em;
+  margin: 0%;
+  font-family: Lato;
+}
+
+h1 {
+  font-size: 45px;
+  color: #007eb3;
+  word-spacing: 10px;
+  border-bottom: dotted 1px #007eb3;
+  text-align: center;
+  padding: 0 0 1em 0;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 25px;
+}
+
+/* Header > nav */
+
+header {
+  text-align: center;
+}
+
+nav {
+  background-color: #007eb3;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style: none;
+  font-style: normal;
+
+  margin: 30px 0 30px 0;
+}
+
+li a,
+address {
+  text-decoration: none;
+  font-style: normal;
+  color: #fff;
+}
+
+img {
+  max-width: 49%;
+}
+
+section {
+  margin: 1em 20%;
+}
+
+.sectionS {
+  margin: 0%;
+}
+
+hr {
+  margin: 0 20% 0 20%;
+}
+/* Mise en form de section */
+
+.container {
+  width: 900px;
+  display: flex;
+}
+
+.subContainer {
+  margin-left: 1em;
+}
+
+.btn {
+  background-color: #007eb3;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 0.6em;
+  text-decoration: none;
+}
+
+.container2 {
+  width: 900px;
+  display: flex;
+}
+
+/* Couleur span */
+
+.span1 {
+  color: #f00;
+}
+
+.span2 {
+  color: #cd8c56;
+}
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+}
+
+td,
+th {
+  border: 1px solid grey;
+  padding: 1em;
+}
+
+.tblBackG {
+  background-color: rgba(73, 73, 73, 0.075);
+}
+
+/* Section à propos */
+
+.container3 {
+  width: 100%;
+  background-image: url(instructions/ressources/fond.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  padding: 5% 0 0 10%;
+}
+
+.container3 div {
+  width: 20%;
+  padding: 1em;
+  background-color: #fff;
+  background-attachment: scroll;
+}
+
+/* Section me contacter */
+
+.flexBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.flexBox p {
+  margin: 0.2em;
+  font-style: italic;
+}
+
+.flexBox:nth-child(3) p {
+  color: blue;
+}
+
+.flexBox:nth-child(4) p {
+  color: blue;
+}
+
+/* Formulaire de contact */
+
+form {
+  background-color: grey;
+  background-image: url("instructions/ressources/map-image.png");
+}
+
+.formulaire {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+input,
+textarea {
+  color: rgba(0, 0, 0, 0.26);
+  border-radius: 0.5em;
+  border: none;
+  padding: 1.4em;
+  background: transparent;
+
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.formulaireGauche {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 1em;
+}
+
+.formulaireDroit {
+  width: 50%;
+}
+
+.formulaireDroit textarea {
+  width: 100%;
+}
+
+.btnSubmit {
+  display: flex;
+  justify-content: center;
+}
+
+.btn2 {
+  padding: 1.5em 2em;
+  background-color: #007eb3;
+  color: #fff;
+  margin: 3em 0;
+}
+
+.flexBox2 {
+  display: flex;
+}
+
+.flexBox2 i:first-child {
+  color: #4267b2;
+}
+
+.flexBox2 i:nth-child(2) {
+  color: #1da1f2;
+}
+
+.flexBox2 i:nth-child(3) {
+  color: #bd081c;
+}
+
+.flexBox2 i:last-child {
+  color: #8948c1;
+}
+
+i {
+  font-size: 2em;
+  margin: 0 0.1em;
+}
+
+/* Footer */
+
+footer {
+  margin: 1em 20%;
+  background-color: #007eb3;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p{
+    color: #fff;
+    margin: 0 0 3em 0;
+}
+
+footer img{
+    margin: 0%;
+    max-height: 100px;
+}

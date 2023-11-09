@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours-Image-Adaptative</title>
+    <link rel="stylesheet" href="../common-v3.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h2>Images Adaptatives</h2>
+      <p>
+        Images adaptatives avec les attributs srcset et sizes / l'élément &lt;picture&gt;
+      </p>
+    </header>
+    <main>
+      <section>
+        <h2>Démo srcset et descripteur x</h2>
+        <p>
+          Le navigateur sélectionne la version HD de l'image si l'écran est HD.
+        </p>
+        <p>
+          Si le navigateur ne reconnaît pas srcset ou si l'écran n'est pas HD, l'image chargée est celle de src.
+        </p>
+        <img class="papillon1" src="instructions/ressources/papillon-600.jpg" srcset="instructions/ressources/papillon-600HD.jpg 2x" alt="image-papillon" />
+      </section>
+      <section>
+        <h2>Démo sizes et descripteur w</h2>
+        <p>
+          sizes indique au navigateur quelle doit être la largeur finale de l'image à l'affichage en fonction de la largeur du viewport (unité vw).
+        </p>
+        <p>
+          w indique au navigateur la taille de l'image pour qu'il puisse sélectionner celle qu'il considère comme convenant le mieux.
+        </p>
+
+        <img src="instructions/ressources/papillon-600.jpg" srcset="instructions/ressources/papillon-600HD.jpg 1200w, instructions/ressources/papillon-900.jpg 900w, instructions/ressources/papillon-900HD.jpg 1800w" sizes="80vh" />
+      </section>
+      <section>
+        <h2>Démo picture</h2>
+        <p>
+          La balise picture est une balise qui englobe les différentes sources. En fonction de condition sur la taille du média et de sa définition, le navigateur sélectionne la source appropriée.
+        </p>
+        <picture>
+          <source media="(max-width: 375px)" srcset="instructions/ressources/clownfish-mobile.jpg, instructions/ressources/clownfish-mobile-hd.jpg 2x" />
+  
+          <source media="(max-width: 768px)" srcset="instructions/ressources/clownfish-tablette.jpg, instructions/ressources/clownfish-tablette-hd.jpg 2x" />
+  
+          <source media="(min-width: 1024px)" srcset="instructions/ressources/clownfish-desktop.jpg, instructions/ressources/clownfish-desktop-hd.jpg 2x " />
+  
+          <img src="instructions/ressources/clownfish-mobile.jpg" alt="" />
+        </picture>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>
+        Ce matériel pédagogique est la propriété de la 3W Academy. Cet exercice a été réalisé par Catherine Denos.
+      </p>
+      
+    </footer>
+  </body>
+
+</html>

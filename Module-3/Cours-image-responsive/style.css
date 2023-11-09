@@ -1,0 +1,32 @@
+main {
+  background-image: url("instructions/ressources/phare.jpg");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.wrapperGlb {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+}
+
+.quadrillage {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.quadrillage2 {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.quadrillage2 p {
+  width: 100%;
+}
+
+div img {
+  width: 100%;
+  height: auto;
+}

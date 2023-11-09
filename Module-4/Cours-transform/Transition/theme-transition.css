@@ -1,0 +1,21 @@
+ul {
+  background-color: #dd5735;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0%;
+  padding: 0%;
+}
+
+li {
+  color: #fff;
+
+  padding: 0 1em;
+  transition: color 0.2s, background-color 1s, transform 0.5s;
+}
+
+li:hover {
+  transform: scale(1.5);
+  background-color: #fc3;
+  color: #333;
+}
